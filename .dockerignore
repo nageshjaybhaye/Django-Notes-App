@@ -1,0 +1,7 @@
+data/
+*.sock
+*.log
+__pycache__/
+*.pyc
+.env
+.git
