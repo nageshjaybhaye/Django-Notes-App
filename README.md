@@ -68,12 +68,6 @@ GitHub webhook is configured to trigger the Jenkins pipeline automatically on ev
 
 ---
 
-## 📦 Docker Setup
-
-### Build Image
-```bash
-docker build -t notes-app:latest .
-
 ---
 
 ## 🙋 Author
@@ -83,3 +77,4 @@ CloudOps Engineer | DevOps Enthusiast
 
 🔗 GitHub: https://github.com/nageshjaybhaye  
 🔗 LinkedIn: https://www.linkedin.com/in/nageshjaybhaye/
+
