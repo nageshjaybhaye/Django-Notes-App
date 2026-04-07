@@ -1,30 +1,70 @@
-# Simple Notes App for TWS Community
-This is a simple notes app built with React and Django.
+# 🚀 Django Notes App - CI/CD Pipeline with Jenkins & Docker
 
-## Requirements
-1. Python 3.9
-2. Node.js
-3. React
+This project demonstrates an end-to-end DevOps workflow where a Django-based Notes Application is containerized and deployed using Docker, and the entire process is automated using a Jenkins CI/CD pipeline.
 
-## Installation
-1. Clone the repository
-```
-git clone https://github.com/LondheShubham153/django-notes-app.git
-```
+---
 
-2. Build the app
-```
-docker build -t notes-app .
-```
+## 🔧 Project Overview
 
-3. Run the app
-```
-docker run -d -p 8000:8000 notes-app:latest
-```
+The goal of this project was to automate the complete application lifecycle — from code commit to deployment.
 
-## Nginx
+Initially, the application was deployed manually using Docker. Later, a Jenkins pipeline was implemented to automate the build, push, and deployment process.
 
-Install Nginx reverse proxy to make this application available
+---
 
-`sudo apt-get update`
-`sudo apt install nginx`
+## 🏗️ Architecture
+
+GitHub → Jenkins Pipeline → Docker Build → Docker Hub → Deployment (Docker Compose)
+
+---
+
+## ⚙️ Tech Stack
+
+- 🐍 Django (Backend)
+- 🗄️ MySQL (Database)
+- 🌐 Nginx (Reverse Proxy)
+- 🐳 Docker & Docker Compose
+- 🔁 Jenkins (CI/CD)
+- 📂 GitHub (Version Control)
+
+---
+
+## 🔁 CI/CD Pipeline Stages
+
+1. **Code Clone**
+   - Pulls the latest code from GitHub repository
+
+2. **Build**
+   - Builds Docker image for Django app
+
+3. **Push**
+   - Tags and pushes the Docker image to Docker Hub
+
+4. **Deploy**
+   - Runs containers using Docker Compose
+
+---
+
+## 🔐 Jenkins Setup
+
+- Installed Jenkins on local machine (Windows)
+- Created a Pipeline job using Declarative Pipeline
+- Configured Docker Hub credentials in Jenkins
+
+**Credentials Used:**
+- ID: `dockerHub`
+- Type: Username & Password (Access Token recommended)
+
+---
+
+## 🌐 Webhook Integration
+
+GitHub webhook is configured to trigger the Jenkins pipeline automatically on every push.
+
+---
+
+## 📦 Docker Setup
+
+### Build Image
+```bash
+docker build -t notes-app:latest .
