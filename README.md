@@ -1,6 +1,6 @@
 ## 🔄 CI/CD Pipeline Workflow
 
-![CI/CD Pipeline](images/cicd-workflow.png)
+![CI/CD Pipeline](cicd-workflow.jpg)
 
 
 # 🚀 Django Notes App - CI/CD Pipeline with Jenkins & Docker
