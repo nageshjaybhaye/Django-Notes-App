@@ -1,3 +1,8 @@
+## 🔄 CI/CD Pipeline Workflow
+
+![CI/CD Pipeline](images/cicd-workflow.png)
+
+
 # 🚀 Django Notes App - CI/CD Pipeline with Jenkins & Docker
 
 This project demonstrates an end-to-end DevOps workflow where a Django-based Notes Application is containerized and deployed using Docker, and the entire process is automated using a Jenkins CI/CD pipeline.
